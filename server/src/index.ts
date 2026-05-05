@@ -602,7 +602,7 @@ app.get("/api/dashboard", requireAuth, async (req: AuthedRequest, res) => {
   });
 });
 
-app.use(express.static(config.clientBuildPath));
+// app.use(express.static(config.clientBuildPath));
 
 app.use((req, res, next) => {
   if (req.path.startsWith("/api")) {
