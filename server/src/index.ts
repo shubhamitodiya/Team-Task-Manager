@@ -604,15 +604,15 @@ app.get("/api/dashboard", requireAuth, async (req: AuthedRequest, res) => {
 
 // app.use(express.static(config.clientBuildPath));
 
-app.use((req, res, next) => {
-  if (req.path.startsWith("/api")) {
-    return next();
-  }
+// app.use((req, res, next) => {
+//   if (req.path.startsWith("/api")) {
+//     return next();
+//   }
 
-  return res.sendFile(
-    path.join(config.clientBuildPath, "index.html")
-  );
-});
+//   return res.sendFile(
+//     path.join(config.clientBuildPath, "index.html")
+//   );
+// });
 app.use((error: unknown, _req: Request, res: Response, _next: NextFunction) => {
   if (error instanceof z.ZodError) {
     return res.status(400).json({
