@@ -27,12 +27,8 @@ export function LoginPage() {
   return (
     <div className="auth-layout">
       <section className="auth-hero">
-        <p className="eyebrow">Assignment-ready full stack app</p>
         <h1>Coordinate teams, not spreadsheets.</h1>
-        <p>
-          Sign in to manage projects, assign work, and track overdue tasks in one live Railway-ready
-          application.
-        </p>
+        
       </section>
 
       <section className="auth-card">
